@@ -102,7 +102,7 @@ export function toIMF(date: Date): string {
   const min = dtPad(date.getUTCMinutes().toString());
   const s = dtPad(date.getUTCSeconds().toString());
   const y = date.getUTCFullYear();
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const days = Object.keys(Day);
   const months = [
     "Jan",
     "Feb",
